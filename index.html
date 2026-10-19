@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember &amp; Oak Café</title>
+  <meta name="description" content="Ember & Oak is a neighbourhood café serving wood-fired breakfasts, fresh bakes and specialty coffee.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header: Flexbox aligns the logo and navigation in one row -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Ember <span>&amp;</span> Oak</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#featured">Featured</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Neighbourhood café · Since 2019</p>
+          <h1>Wood-fired breakfasts, fresh bakes &amp; honest coffee.</h1>
+          <p class="lead">We cook over an oak fire every morning and bake everything in house. Pull up a chair, stay a while.</p>
+          <div class="button-group">
+            <a class="btn btn-primary" href="#menu">See the menu</a>
+            <a class="btn btn-outline" href="#visit">Book a table</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 200 200" role="presentation">
+            <circle cx="100" cy="100" r="90" fill="#f3d9b1"/>
+            <path d="M55 95h90v20a45 45 0 0 1-90 0z" fill="#7a3e1d"/>
+            <path d="M145 100h10a15 15 0 0 1 0 30h-12" fill="none" stroke="#7a3e1d" stroke-width="8"/>
+            <path d="M80 80c-8-12 8-18 0-30M100 80c-8-12 8-18 0-30M120 80c-8-12 8-18 0-30" fill="none" stroke="#c4612f" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- About: Grid places text and the "values" list side by side -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <h2>About us</h2>
+          <p>Ember &amp; Oak started as a weekend market stall run by two friends with one cast-iron pan. Today we are a 40-seat café on Harbour Street, but the idea is the same: simple food, cooked well, with ingredients from farms within 50 km.</p>
+          <p>Our space is family friendly, wheelchair accessible and dog friendly on the terrace.</p>
+        </div>
+        <ul class="values">
+          <li class="value-card">
+            <h3>Local first</h3>
+            <p>Eggs, dairy and vegetables from nearby farms.</p>
+          </li>
+          <li class="value-card">
+            <h3>Baked daily</h3>
+            <p>Sourdough and pastries out of the oven by 7 a.m.</p>
+          </li>
+          <li class="value-card">
+            <h3>Low waste</h3>
+            <p>Compostable takeaway cups and a refill discount.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Menu: auto-fit + minmax grid of cards -->
+    <section class="section section-alt" id="menu">
+      <div class="container">
+        <h2>Menu</h2>
+        <p class="section-intro">Served 7 a.m. – 3 p.m. Vegetarian (V) and vegan (VG) options are marked.</p>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Fire-baked eggs</h3>
+              <span class="price">£9.50</span>
+            </div>
+            <p>Two eggs baked in smoky tomato and pepper sauce, with sourdough. <span class="tag">V</span></p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Oak-smoked bacon roll</h3>
+              <span class="price">£7.00</span>
+            </div>
+            <p>Thick-cut bacon, brown sauce and a soft milk bun.</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Mushrooms on toast</h3>
+              <span class="price">£8.50</span>
+            </div>
+            <p>Garlic and thyme mushrooms on grilled sourdough. <span class="tag">VG</span></p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Granola bowl</h3>
+              <span class="price">£6.50</span>
+            </div>
+            <p>House granola, yoghurt, seasonal fruit and honey. <span class="tag">V</span></p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Cardamom bun</h3>
+              <span class="price">£3.50</span>
+            </div>
+            <p>Our best-seller: buttery, sticky and fragrant. <span class="tag">V</span></p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-card-head">
+              <h3>Flat white</h3>
+              <span class="price">£3.40</span>
+            </div>
+            <p>Seasonal espresso with steamed milk. Oat milk at no extra cost.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured: grid-template-areas layout -->
+    <section class="section" id="featured">
+      <div class="container">
+        <h2>This month's specials</h2>
+        <div class="featured-grid">
+          <article class="feature feature-main">
+            <p class="eyebrow">Chef's pick</p>
+            <h3>Shakshuka for two</h3>
+            <p>A big pan of spiced tomatoes, peppers and four eggs, finished with feta, herbs and warm flatbreads straight from the fire.</p>
+            <span class="price">£18.00</span>
+          </article>
+          <article class="feature feature-side-a">
+            <h3>Pumpkin spice latte</h3>
+            <p>Made with real roasted pumpkin. <span class="price">£4.20</span></p>
+          </article>
+          <article class="feature feature-side-b">
+            <h3>Apple &amp; blackberry crumble</h3>
+            <p>Served with custard or vegan cream. <span class="price">£5.50</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visit: hours, location and contact -->
+    <section class="section section-alt" id="visit">
+      <div class="container visit-grid">
+        <div class="info-block">
+          <h2>Opening hours</h2>
+          <dl class="hours">
+            <div><dt>Mon – Fri</dt><dd>7:00 – 15:00</dd></div>
+            <div><dt>Saturday</dt><dd>8:00 – 16:00</dd></div>
+            <div><dt>Sunday</dt><dd>9:00 – 14:00</dd></div>
+          </dl>
+        </div>
+        <div class="info-block">
+          <h2>Find us</h2>
+          <address>
+            12 Harbour Street<br>
+            Bristol BS1 4XX
+          </address>
+          <p>Five minutes' walk from Temple Meads station. Bike racks out front.</p>
+        </div>
+        <div class="info-block">
+          <h2>Reservations</h2>
+          <p>Walk-ins welcome. For groups of six or more, please book ahead.</p>
+          <div class="button-group">
+            <a class="btn btn-primary" href="tel:+441170000000">Call 0117 000 0000</a>
+            <a class="btn btn-outline" href="mailto:hello@emberandoak.example">Email us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Ember &amp; Oak Café. A student project.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
